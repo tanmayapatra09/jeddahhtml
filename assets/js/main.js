@@ -2,7 +2,7 @@
   "use strict";
 
   /*----------------------------------
-  # header sticky 
+  # header sticky
   -----------------------------------*/
 
   var activeSticky = $("#active-sticky"),
@@ -64,8 +64,8 @@
     $(this).parent().children(".category-sub-menu").slideToggle();
   });
 
-  /*-----------------------------  
-# Category more toggle  
+  /*-----------------------------
+# Category more toggle
 -------------------------------*/
 
   $(".category-menu li.hidden").hide();
@@ -122,8 +122,8 @@
     }
   });
 
-  /*----------------------------  
-        All Category toggle  
+  /*----------------------------
+        All Category toggle
      ------------------------------*/
 
   $(".more-btn").on("click", function (e) {
@@ -147,9 +147,9 @@
   $(".menu-item-has-children-6").on("click", function () {
     $(".category-mega-menu-6").slideToggle("slow");
   });
-  
-  /*-----------------------------  
-                Category more toggle  
+
+  /*-----------------------------
+                Category more toggle
           -------------------------------*/
 
   /*-----------------------------------
@@ -1142,8 +1142,8 @@
     }, 0);
   });
 
-  /*--------------------------     
-# counter 
+  /*--------------------------
+# counter
 -------------------------- */
 
   $(".count").each(function () {
