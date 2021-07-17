@@ -26,7 +26,7 @@
                 </div>
 
                 <form action="#" class="offcanvas-form">
-                    <div class="input-group border">
+                    <div class="input-group">
                         <div class="input-group-text">
                             <select class="form-select d-none d-xl-block" aria-label="Default select example">
                                 <option selected="">All categories</option>
@@ -35,7 +35,10 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <input type="text" class="form-control border-0" placeholder="Enter your search key ... " />
+                        <div class="input-group-text">
+                          <input type="text" name="search" maxlength="300" pattern=".*\S+.*" id="input_search_mobile" class="form-control valid" value="" placeholder="Search for products " required="" autocomplete="off" aria-invalid="false">
+                          <div id="response_search_results_mobile" class="search-results-ajax" style="display: block;"><ul><li><a href="">Armaani Sungl<strong>as</strong>ses</a></li><li><a href="">Scanpan Classic Covered Saute Pan</a></li></ul></div>
+                        </div>
                         <div class="input-group-text">
                             <button class="btn-search btn btn-hover-primary" type="submit">
                                 <i class="fa fa-search"></i>
@@ -44,8 +47,8 @@
                     </div>
                 </form>
 
-                <!-- offcanvas-mobile-menu start -->
 
+                <!-- offcanvas-mobile-menu start -->
                 <nav id="offcanvasNav" class="offcanvas-menu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -115,25 +118,7 @@
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
 
-                    <div class="offcanvas-social">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="ion-social-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-google"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+
                 </nav>
                 <!-- offcanvas-mobile-menu end -->
                 <div class="header-top">
@@ -238,8 +223,8 @@
 
                     <!-- Header Menu Start -->
                     <div class="col-md-6 col-lg-4 d-none d-lg-block">
-                        <form action="#">
-                            <div class="input-group border">
+                        <form action="#" class="">
+                            <div class="input-group">
                                 <div class="input-group-text">
                                     <select class="form-select d-none d-xl-block" aria-label="Default select example">
                                         <option value="0">All categories</option>
@@ -306,13 +291,15 @@
                                         <option value="74">Baking Cups</option>
                                         <option value="75">Decorating Pens</option>
                                     </select>
-
                                 </div>
-                                <input type="text" class="form-control border-0" placeholder="Enter your search key ... " />
                                 <div class="input-group-text">
-                                    <button class="btn-search btn btn-hover-primary" type="submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>
+                                  <input type="text" name="search" maxlength="300" pattern=".*\S+.*" id="input_search" class="form-control input-search valid" value="" placeholder="Search for products " required="" autocomplete="off" aria-invalid="false">
+                                  <div id="response_search_results" class="search-results-ajax" style=""><ul><li><a href="">Armaani Sungl<strong>as</strong>ses</a></li><li><a href="">Scanpan Classic Covered Saute Pan</a></li></ul></div>
+                                </div>
+                                <div class="input-group-text">
+                                  <button class="btn-search btn btn-hover-primary" type="submit">
+                                      <i class="fa fa-search"></i>
+                                  </button>
                                 </div>
                             </div>
                         </form>
@@ -685,6 +672,7 @@
     <script src="assets/js/vendor/vendor.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 </body>
 
