@@ -49,6 +49,18 @@
     width: calc(100% - 30px);
     max-width: 64rem;
 }
+.input-group-location .fa-map-marker {
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  z-index: 6;
+}
+.input-group-location .search-results-ajax .fa-map-marker{
+  position: inherit;
+}
+.input-group-location .form-control {
+  padding-left: 40px;
+}
 .input-group-text {
   position: relative;
 }
@@ -59,7 +71,7 @@
     background-color:#fff;
     border-left:1px solid #e6e6e6;
     border-right:1px solid #e6e6e6;
-    z-index:9999999;
+    z-index:9;
     -webkit-box-shadow:0 3px 6px rgba(0,0,0,.1);
     box-shadow:0 3px 6px rgba(0,0,0,.1);
     display: none;
