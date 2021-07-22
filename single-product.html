@@ -570,7 +570,7 @@
     <div class="single-product-wrap">
         <div class="container wrapper">
 
-          <div class="product-details-container ">
+          <div class="product-details-container">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-6">
 
@@ -644,14 +644,15 @@
                                   </div>
                               </div>
 
-
                           </div>
 
+                          <div class="row-custom text-center">
+                            <button class="btn btn-lg btn-video-preview" data-bs-toggle="modal" data-bs-target="#productVideoModal"><i class="fa fa-video-camera"></i>Video</button>
+                            <button class="btn btn-lg btn-video-preview" data-bs-toggle="modal" data-bs-target="#productAudioModal"><i class="fa fa-music"></i>Audio</button>
+                          </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6">
                             <div id="response_product_details" class="product-content-details">
-
-
 
         <h1 class="product-title">The European languages are members of the same family</h1>
                 <div class="row-custom meta">
@@ -1451,7 +1452,6 @@
 
     <!-- add to wishlist -->
     <!-- Button trigger modal -->
-
     <!-- Modal -->
     <div class="modal fade" id="addtowishlist" tabindex="-1" aria-labelledby="addtowishlist">
         <div class="modal-dialog modal-dialog-centered">
@@ -1510,6 +1510,49 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Video Player -->
+    <!-- Modal -->
+    <div class="modal fade" id="productVideoModal" tabindex="-1" aria-labelledby="quickview">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                  <video width="100%" height="400" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+
+                </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Audi Player -->
+    <!-- Modal -->
+    <div class="modal fade" id="productAudioModal" tabindex="-1" aria-labelledby="quickview">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body my-6">
+
+                  <audio width="100%" controls>
+                    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+
+                </div>
+          </div>
         </div>
     </div>
 
