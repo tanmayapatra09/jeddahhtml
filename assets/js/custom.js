@@ -88,7 +88,7 @@ $('.slider-nav').slick({
 });
 
 
-$(document).on("click", ".product-add-to-cart-container .number-spinner button", function () {
+$(document).on("click", ".number-spinner button", function () {
 	update_number_spinner($(this))
 });
 
