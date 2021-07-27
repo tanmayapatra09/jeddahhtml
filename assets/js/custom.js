@@ -42,6 +42,17 @@ $('.btn-wishlist').on('click', function(){
 });
 
 
+
+$("#use_same_address_for_billing").change(function () {
+	if ($(this).is(":checked")) {
+		$(".cart-form-billing-address").hide()
+	} else {
+		$(".cart-form-billing-address").show()
+	}
+})
+
+
+
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
