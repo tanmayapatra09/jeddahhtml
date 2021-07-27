@@ -362,65 +362,93 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h3 class="bread-crumb-title">Settings</h3>
+					<h3 class="bread-crumb-title">check out</h3>
 					<ol class="breadcrumb bg-transparent justify-content-center m-0 p-0 align-items-center">
 						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-						<li class="breadcrumb-item active" aria-current="page"> Update Profile </li>
+						<li class="breadcrumb-item active" aria-current="page"> check out </li>
 					</ol>
 				</div>
 			</div>
 		</div>
 	</nav>
-	<div class="my-account section-py">
+	<div class="check-out-section section-py">
 		<div class="container">
-			<div class="row">
-				<!-- My Account Tab Menu Start -->
-				<div class="col-lg-3 col-12 mb-5">
-					<div class="myaccount-tab-menu nav">
-						<ul>
-							<li><a class="active" href="update-profile.html">Update Profile</a></li>
-							<li><a href="personal-information.html">Personal Information</span></a></li>
-							<li><a href="shop-settings.html">Shop Settings</a></li>
-							<li><a href="shipping-address.html">Shipping Address</a></li>
-							<li><a href="social-media.html">Social Media</a></li>
-							<li><a href="change-password.html">Change Password</a></li>
-						</ul>
+			<div class="shopping-cart shopping-cart-shipping">
+				<div class="row">
+					<div class="col-sm-12 col-lg-7">
+						<div class="left">
+							<h1 class="cart-section-title">Checkout</h1>
+							<div class="tab-checkout tab-checkout-closed"> <a href="checkout.html"><h2 class="title">1.&nbsp;&nbsp;Shipping Information</h2></a> <a href="checkout.html" class="link-underlined edit-link">Edit</a> </div>
+							<div class="tab-checkout tab-checkout-open">
+								<h2 class="title">
+                  2.										&nbsp;Payment Method</h2>
+								<form action="payment.html" id="form_validate" class="validate_terms" method="post" accept-charset="utf-8" novalidate="novalidate">
+									<input type="hidden" name="mds_payment_type" value="sale">
+									<div class="row">
+										<div class="col-12">
+											<div class="form-group">
+												<ul class="payment-options-list">
+													<li>
+														<div class="option-payment">
+															<div class="custom-control custom-radio">
+																<input type="radio" class="custom-control-input" id="option_bank" name="payment_option" value="bank_transfer" required="" checked="">
+																<label class="custom-control-label label-payment-option" for="option_bank">Bank Transfer
+																	<br><small>Make your payment directly into our bank account.</small></label>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="form-group">
+												<div class="custom-control custom-checkbox custom-control-validate-input">
+													<input type="checkbox" class="custom-control-input" name="terms" id="checkbox_terms" required="">
+													<label for="checkbox_terms" class="custom-control-label">I have read and agree to the&nbsp;<a href="terms-conditions.html" class="link-terms" target="_blank"><strong>Terms &amp; Conditions</strong></a></label>
+												</div>
+											</div>
+											<div class="form-group m-t-15"> <a href="cart.html" class="link-underlined link-return-cart">&lt;&nbsp;Return to cart</a>
+												<button type="submit" name="submit" value="update" class="btn btn-lg btn-custom btn-continue-payment float-right">Continue to Payment</button>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" name="sys_lang_id" value="1">
+								</form>
+							</div>
+							<div class="tab-checkout tab-checkout-closed-bordered">
+								<h2 class="title">
+                  3.										&nbsp;Payment									</h2> </div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-5 order-summary-container">
+						<h2 class="cart-section-title">Order Summary (1)</h2>
+						<div class="right">
+							<div class="cart-order-details">
+								<div class="item">
+									<div class="item-left">
+										<div class="img-cart-product">
+											<a href="http://15.206.88.133/marketplace/the-european-languages-are-members-of-the-same-family-6"> <img src="http://15.206.88.133/marketplace/uploads/images/img_x300_60f46cc86a79d2-89485788-79867864.jpg" data-src="http://15.206.88.133/marketplace/uploads/images/img_x300_60f46cc86a79d2-89485788-79867864.jpg" alt="The European languages are members of the same family" class="img-fluid img-product ls-is-cached lazyloaded" onerror="this.src='http://15.206.88.133/marketplace/assets/img/img_bg_product_small.jpg'"> </a>
+										</div>
+									</div>
+									<div class="item-right">
+										<div class="list-item"> <a href="http://15.206.88.133/marketplace/the-european-languages-are-members-of-the-same-family-6">
+                                      The European languages are members of the same family (Size: Large)                                    </a> </div>
+										<div class="list-item seller"> By&nbsp;<a href="http://15.206.88.133/marketplace/profile/tanmayapatra09">tanmayapatra09</a> </div>
+										<div class="list-item m-t-15">
+											<label>Quantity:</label> <strong class="lbl-price">1</strong> </div>
+										<div class="list-item">
+											<label>Price:</label> <strong class="lbl-price"><span>$</span>444</strong> </div>
+										<div class="list-item">
+											<label>Shipping:</label> <strong><span>$</span>505</strong> </div>
+									</div>
+								</div>
+							</div>
+							<p class="m-t-30"> <strong>Subtotal<span class="float-right"><span>$</span>444</span></strong> </p>
+							<p> Shipping<span class="float-right"><span>$</span>505</span>
+							</p>
+							<p class="line-seperator"></p>
+							<p> <strong>Total<span class="float-right"><span>$</span>949</span></strong> </p>
+						</div>
 					</div>
 				</div>
-				<!-- My Account Tab Menu End -->
-				<!-- My Account Tab Content Start -->
-				<div class="col-lg-9 col-12">
-					<div class="account-details-form">
-						<form action="#">
-							<div class="row">
-								<div class="col-lg-3 col-12 mb-5">
-									<figure class="mb-5"><img src="assets/images/default-user.jpg" alt="" /></figure>
-									<input type="file" /> </div>
-							</div>
-							<div class="row">
-								<div class="col-lg-6 col-12 mb-5">
-									<label>Email Address</label>
-									<input placeholder="Email Address" type="text"> </div>
-								<div class="col-lg-6 col-12 mb-5">
-									<label>User Name</label>
-									<input placeholder="User Name" type="text"> </div>
-								<div class="col-lg-6 col-12 mb-5">
-									<label>Slug</label>
-									<input placeholder="Slug" type="text"> </div>
-								<div class="col-lg-6 col-12 mb-5">
-									<label>Send me an email when someone send me a message</label>
-									<p>
-										<input type="radio" /> Yes
-										<input type="radio" /> No</p>
-								</div>
-								<div class="col-12">
-									<button class="btn btn-warning btn-hover-primary">Save Changes</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-				<!-- My Account Tab Content End -->
 			</div>
 		</div>
 	</div>

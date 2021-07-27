@@ -362,65 +362,60 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h3 class="bread-crumb-title">Settings</h3>
+					<h3 class="bread-crumb-title">Register</h3>
 					<ol class="breadcrumb bg-transparent justify-content-center m-0 p-0 align-items-center">
 						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-						<li class="breadcrumb-item active" aria-current="page"> Update Profile </li>
+						<li class="breadcrumb-item active" aria-current="page"> Register </li>
 					</ol>
 				</div>
 			</div>
 		</div>
 	</nav>
-	<div class="my-account section-py">
+	<div class="login-register-area section-py">
 		<div class="container">
 			<div class="row">
-				<!-- My Account Tab Menu Start -->
-				<div class="col-lg-3 col-12 mb-5">
-					<div class="myaccount-tab-menu nav">
-						<ul>
-							<li><a class="active" href="update-profile.html">Update Profile</a></li>
-							<li><a href="personal-information.html">Personal Information</span></a></li>
-							<li><a href="shop-settings.html">Shop Settings</a></li>
-							<li><a href="shipping-address.html">Shipping Address</a></li>
-							<li><a href="social-media.html">Social Media</a></li>
-							<li><a href="change-password.html">Change Password</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- My Account Tab Menu End -->
-				<!-- My Account Tab Content Start -->
-				<div class="col-lg-9 col-12">
-					<div class="account-details-form">
-						<form action="#">
-							<div class="row">
-								<div class="col-lg-3 col-12 mb-5">
-									<figure class="mb-5"><img src="assets/images/default-user.jpg" alt="" /></figure>
-									<input type="file" /> </div>
-							</div>
-							<div class="row">
-								<div class="col-lg-6 col-12 mb-5">
-									<label>Email Address</label>
-									<input placeholder="Email Address" type="text"> </div>
-								<div class="col-lg-6 col-12 mb-5">
-									<label>User Name</label>
-									<input placeholder="User Name" type="text"> </div>
-								<div class="col-lg-6 col-12 mb-5">
-									<label>Slug</label>
-									<input placeholder="Slug" type="text"> </div>
-								<div class="col-lg-6 col-12 mb-5">
-									<label>Send me an email when someone send me a message</label>
-									<p>
-										<input type="radio" /> Yes
-										<input type="radio" /> No</p>
-								</div>
-								<div class="col-12">
-									<button class="btn btn-warning btn-hover-primary">Save Changes</button>
+				<div class="col-lg-7 col-md-12 mx-auto">
+					<div class="login-register-wrapper">
+						<div class="login-register-tab-list nav nav-tabs" id="nav-tab" role="tablist">
+							<a class="active" data-bs-toggle="tab" href="#lg1">
+								<h4>login</h4> </a>
+							<a data-bs-toggle="tab" href="#lg2">
+								<h4>register</h4> </a>
+						</div>
+						<div class="tab-content">
+							<div id="lg1" class="tab-pane show active">
+								<div class="login-form-container">
+									<div class="login-register-form">
+										<form action="#" method="post">
+											<input type="text" name="user-name" placeholder="Username" />
+											<input type="password" name="user-password" placeholder="Password" />
+											<div class="button-box">
+												<div class="login-toggle-btn">
+													<input id="remember" type="checkbox" />
+													<label for="remember">Remember me</label> <a href="#">Forgot Password?</a> </div>
+												<a href="#" class="btn btn-warning btn-hover-primary"> <span>Login</span> </a>
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
-						</form>
+							<div id="lg2" class="tab-pane">
+								<div class="login-form-container">
+									<div class="login-register-form">
+										<form action="#" method="post">
+											<input type="text" name="user-name" placeholder="Username" />
+											<input type="password" name="user-password" placeholder="Password" />
+											<input name="user-email" placeholder="Email" type="email" />
+											<div class="button-box">
+												<a href="#" class="btn btn-warning btn-hover-primary"> <span>Register</span> </a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!-- My Account Tab Content End -->
 			</div>
 		</div>
 	</div>
