@@ -90,7 +90,7 @@ a {
 
 .btn {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 500;
     color: #212529;
     text-align: center;
     vertical-align: middle;
@@ -101,8 +101,9 @@ a {
     background-color: transparent;
     border: 1px solid transparent;
     padding: .375rem .75rem;
-    border-radius: .25rem;
+    border-radius: .1875rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-size: 14px;
 }
 .btn-block {
     display: block;
@@ -441,10 +442,10 @@ a {
     border-color: #17a2b8;
 }
 .btn-outline-light {
-    color: #666;
+    color: #63696f;
     background-color: transparent;
     background-image: none;
-    border-color: #999;
+    border-color: #e4e4e4;
 }
 .btn-outline-light:hover {
     color: #212529;
